@@ -6,24 +6,20 @@
         <title>Dr. Javier Godoy - Academic Homepage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- Usamos Inter para cuerpo y una fuente con más carácter para títulos si quisieras, pero Inter bien usada es muy sofisticada -->
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
         <style>
         :root {
-            --primary-color: #0f172a; /* Azul casi negro, más profundo */
-            --secondary-color: #14b8a6; /* Turquesa vibrante para acentos */
+            --primary-color: #0f172a; 
+            --secondary-color: #14b8a6; 
             --text-color: #1e293b;
             --light-text: #64748b;
-            --bg-color: #f8fafc; /* Gris muy muy claro */
+            --bg-color: #f8fafc; 
             --card-bg: #ffffff;
             --border-color: #e2e8f0;
-            
-            /* EFECTO 1: Imagen de fondo + Overlay oscuro para la cabecera */
-            /* Reemplaza la URL por una imagen real de la UBA, biblioteca, o abstracción */
             --header-image-url: url('https://images.unsplash.com/photo-1590113110292-9706f9d6c342?q=80&w=1600&auto=format&fit=crop'); 
-            --header-overlay: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%);
+            --header-overlay: linear-gradient(135deg, rgba(34, 35, 105, 0.95) 0%, rgba(39, 77, 139, 0.9) 100%);
         }
 
         * {
@@ -33,7 +29,6 @@
         }
 
         html {
-            /* EFECTO 3: Suavizado de fuente para navegadores WebKit/Mac */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             scroll-behavior: smooth;
@@ -41,13 +36,12 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.65; /* Un poco más de aire entre líneas */
+            line-height: 1.65; 
             color: var(--text-color);
             background-color: var(--bg-color);
-            padding: 60px 20px; /* Más espacio superior e inferior */
+            padding: 60px 20px; 
         }
 
-        /* EFECTO 4: Animación de entrada suave */
         @keyframes fadeInSlideUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -57,21 +51,19 @@
             max-width: 880px;
             margin: 0 auto;
             background: var(--card-bg);
-            border-radius: 20px; /* Bordes más suaves */
-            /* Sombra más sutil y difusa */
+            border-radius: 20px; 
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.02), 0 10px 10px -5px rgba(0, 0, 0, 0.01);
             overflow: hidden;
-            animation: fadeInSlideUp 0.8s ease-out; /* Aplicación de la animación */
+            animation: fadeInSlideUp 0.8s ease-out; 
         }
 
-        /* Header sofisticado con imagen y filtro */
         header {
             position: relative;
-            background-color: var(--primary-color); /* Fallback */
+            background-color: var(--primary-color); 
             background-image: var(--header-overlay), var(--header-image-url);
             background-size: cover;
             background-position: center;
-            padding: 70px 50px; /* Más aire en el padding */
+            padding: 70px 50px; 
             color: #ffffff;
             display: flex;
             align-items: center;
@@ -79,19 +71,18 @@
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            /* Borde más fino y elegante */
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+            border: 3px solid var(--secondary-color);
+            box-shadow: 0 15px 15px -3px rgba(0,0,0,0.3);
             flex-shrink: 0;
-            transition: transform 0.3s ease; /* Pequeña interacción al hover */
+            transition: transform 0.3s ease; 
         }
         
         .profile-img:hover {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
 
         .header-text h1 {
@@ -99,14 +90,14 @@
             font-weight: 700;
             margin-bottom: 15px;
             color: #ffffff;
-            letter-spacing: -1px; /* Título más compacto */
+            letter-spacing: -1px; 
         }
 
         .header-text .roles {
             font-size: 1rem;
             line-height: 1.6;
             color: #e2e8f0;
-            font-weight: 300; /* Más ligero */
+            font-weight: 300; 
         }
 
         .header-text .role-item {
@@ -119,7 +110,7 @@
         }
 
         .header-text a {
-            color: #5eead4; /* Turquesa más claro para fondo oscuro */
+            color: #5eead4; 
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: all 0.2s ease;
@@ -129,7 +120,6 @@
             border-bottom: 1px solid #5eead4;
         }
 
-        /* Contenido principal */
         .main-content {
             padding: 50px;
         }
@@ -141,7 +131,6 @@
         h2 {
             font-size: 1.3rem;
             color: var(--primary-color);
-            /* EFECTO 3: Espaciado entre letras en títulos */
             letter-spacing: 1px; 
             text-transform: uppercase;
             margin-bottom: 25px;
@@ -149,7 +138,6 @@
             align-items: center;
         }
         
-        /* Línea decorativa elegante al lado del título en vez de borde inferior completo */
         h2::after {
             content: '';
             flex-grow: 1;
@@ -160,9 +148,9 @@
 
         h3 {
             font-size: 1.1rem;
-            font-weight: 500;
-            margin-bottom: 20px;
-            color: var(--light-text);
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
         }
 
         p {
@@ -190,31 +178,33 @@
             margin-top: 30px;
             font-size: 1rem;
             border: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
-        /* Lista de Publicaciones Sofisticada */
-        .publications-list {
+        /* Listas interactivas (Publicaciones, Estudiantes, Servicio) */
+        .item-list {
             list-style: none;
         }
 
-        .publications-list li {
+        .item-list li {
             position: relative;
-            padding: 15px 15px 15px 40px; /* Padding interno */
+            padding: 15px 15px 15px 40px; 
             margin-bottom: 10px;
             font-size: 1.05rem;
             border-radius: 8px;
-            transition: all 0.2s ease; /* Preparación para el efecto Hover */
+            transition: all 0.2s ease; 
         }
         
-        /* EFECTO 2: Micro-interacción en publicaciones */
-        .publications-list li:hover {
+        .item-list li:hover {
             background-color: #fafafa;
-            transform: translateX(5px); /* Desplazamiento lateral suave */
-            box-shadow: inset 3px 0 0 var(--secondary-color); /* Línea de acento interna */
+            transform: translateX(5px); 
+            box-shadow: inset 3px 0 0 var(--secondary-color); 
         }
 
-        .publications-list li::before {
-            content: "→"; /* Flecha más moderna que un punto */
+        .item-list li::before {
+            content: "→"; 
             color: var(--secondary-color);
             font-size: 1.1rem;
             position: absolute;
@@ -223,12 +213,12 @@
             opacity: 0.7;
         }
         
-        .publications-list li a {
+        .item-list li a {
             color: var(--text-color);
             font-weight: 500;
         }
         
-        .publications-list li a:hover {
+        .item-list li a:hover {
             color: var(--secondary-color);
         }
 
@@ -238,13 +228,12 @@
             font-size: 0.85rem;
             background: #f1f5f9;
             padding: 3px 10px;
-            border-radius: 20px; /* Bordes totalmente redondeados tipo píldora */
+            border-radius: 20px; 
             margin-left: 8px;
             display: inline-block;
             border: 1px solid var(--border-color);
         }
 
-        /* Diseño Responsivo */
         @media (max-width: 700px) {
             header {
                 flex-direction: column;
@@ -265,10 +254,10 @@
             .header-text h1 {
                 font-size: 2.1rem;
             }
-            .publications-list li {
+            .item-list li {
                 padding-left: 35px;
             }
-            .publications-list li::before {
+            .item-list li::before {
                 left: 10px;
             }
         }
@@ -278,7 +267,7 @@
 
         <div class="container">
 
-            <!-- Header Section Sofisticado -->
+            <!-- Header Section -->
             <header>
                 <img class="profile-img" alt="Dr. Javier Godoy"
                     src="jgodoy.jpg">
@@ -291,10 +280,13 @@
                             Universidad de Buenos Aires (UBA)
                         </div>
                         <div class="role-item">
-                            <strong>Researcher</strong> · <a
+                            <!-- <strong>Researcher</strong> · -->
+                            <a
                                 href="http://lafhis.dc.uba.ar"
-                                target="_blank">LAFHIS Lab</a>, Institute of
-                            Computer Science (UBA & CONICET)
+                                target="_blank">LAFHIS Lab</a>, <a
+                                href="https://icc.fcen.uba.ar/"
+                                target="_blank">ICC UBA/CONICET</a>
+                            <!-- (UBA & CONICET) -->
                         </div>
                     </div>
                 </div>
@@ -309,28 +301,26 @@
                             target="_blank">Universidad Nacional de General
                             Sarmiento, Argentina</a>, in 2016. I completed my
                         PhD studies in 2026 at <a href="http://dc.uba.ar"
-                            target="_blank">Department of Computer Science,
-                            FCEyN, University of Buenos Aires</a>. My
+                            target="_blank">Departamento de Computación,
+                            FCEyN, Universidad de Buenos Aires</a>. My
                         research
                         interests are in the broad area of Software Engineering,
                         but particularly in behavioral model inference for
                         programs and smart contracts.</p>
 
-                    <p style="font-weight: 500; color: var(--light-text);">PhD.
-                        Advisor: <a href="https://lafhis.dc.uba.ar/~jgaleotti"
-                            target="_blank" style="font-weight: 600;">Juan Pablo
-                            Galeotti</a></p>
-
                     <div class="contact-info">
-                        <strong>Contact:</strong> <a
-                            href="mailto:jgodoy@dc.uba.ar">jgodoy@dc.uba.ar</a>
+                        <div><strong>Contact:</strong> <a
+                                href="mailto:jgodoy@dc.uba.ar">jgodoy@dc.uba.ar</a></div>
+                        <div><strong>ORCID:</strong> <a
+                                href="https://orcid.org/0000-0002-4880-4070"
+                                target="_blank">0000-0002-4880-4070</a></div>
                     </div>
                 </section>
 
                 <!-- Publications Section -->
                 <section id="publications">
                     <h2>Publications</h2>
-                    <ul class="publications-list">
+                    <ul class="item-list">
                         <li>
                             <a
                                 href="https://link.springer.com/article/10.1007/s10270-025-01333-x"
@@ -368,22 +358,101 @@
                     </ul>
                 </section>
 
+                <!-- Mentoring & Students Section -->
+                <section id="mentoring">
+                    <h2>Mentoring & Students</h2>
+                    <ul class="item-list">
+                        <li>
+                            <strong>Gianfranco Battolla</strong> – Licenciatura
+                            Thesis Director (Ongoing, 2026). <em>DC, UBA</em>.
+                        </li>
+                        <li>
+                            <a
+                                href="https://gestion.dc.uba.ar/media/academic/grade/thesis/tesis_Ian_RdHFhKy.pdf"
+                                target="_blank"><strong>Ian
+                                    Grinspan</strong></a> –
+                            Licenciatura Thesis
+                            Director (Completed, 2024-2025) & Scholarship Mentor
+                            (2023-2024). <em>DC, UBA</em>.
+                        </li>
+                        <li>
+                            <a
+                                href="https://gestion.dc.uba.ar/media/academic/grade/thesis/tesis_Felicitas_García.pdf"
+                                target="_blank">
+                                <strong>Felicitas García</strong>
+                            </a> – Licenciatura
+                            Thesis Director (Completed, 2024-2025). <em>DC,
+                                UBA</em>.
+                        </li>
+                        <li>
+                            <a
+                                href="https://gestion.dc.uba.ar/media/academic/grade/thesis/tesis_Wappner_0Uhe4zA.pdf"
+                                target="_blank">
+                                <strong>Daniel Wappner</strong>
+                            </a> – Licenciatura
+                            Thesis Director (Completed, 2023-2024) & Scholarship
+                            Mentor (2022-2023). <em>DC, UBA</em>.
+                        </li>
+                        <li>
+                            <a
+                                href="https://gestion.dc.uba.ar/media/academic/grade/thesis/Tesis_Eden_Torres.pdf"
+                                target="_blank">
+                                <strong>Edén Torres</strong>
+                            </a> – Licenciatura Thesis
+                            Co-Director (Completed, 2022-2023). <em>DC,
+                                UBA</em>.
+                        </li>
+                        <li>
+                            <strong>Emilio Giménez</strong> – Scholarship Mentor
+                            (2022-2024). <em>DC, UBA</em>.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Academic Service Section -->
+                <section id="academic-service">
+                    <h2>Academic Service</h2>
+
+                    <h3>Journal Reviewer</h3>
+                    <ul class="item-list">
+                        <li>IEEE Transactions on Software Engineering (TSE) -
+                            2026</li>
+                    </ul>
+
+                    <h3 style="margin-top: 30px;">Event Organization</h3>
+                    <ul class="item-list">
+                        <li>
+                            <strong>Organizer:</strong> <a
+                                href="https://sites.google.com/view/facas2025/"
+                                target="_blank">FACAS 2025</a> (Workshop
+                            Fundamentos Para El Análisis Y Construcción
+                            Automática De Software). <em>Río Cuarto, Córdoba,
+                                Argentina</em>.
+                        </li>
+                        <li>
+                            <strong>Student Volunteer:</strong> MODELS 2025.
+                            <em>Grand Rapids, Michigan, USA</em>.
+                        </li>
+                    </ul>
+                </section>
+
                 <!-- Teaching Section -->
                 <section id="teaching">
                     <h2>Teaching</h2>
                     <p>I am a Professor (since 2026) and formerly (since 2020)
                         Chief Teaching Assistant at
                         the <a href="http://www.dc.uba.ar"
-                            target="_blank">Computer Science Department</a>, <a
+                            target="_blank">Departmento de Computación</a>, <a
                             href="http://www.exactas.uba.ar"
-                            target="_blank">School of Sciences</a>, <a
-                            href="http://www.uba.ar" target="_blank">University
-                            of Buenos Aires</a>. Also, I am a visitor professor
+                            target="_blank">FCEyN</a>, <a
+                            href="http://www.uba.ar" target="_blank">Universidad
+                            de Buenos Aires</a>. Also, I am a visitor professor
                         at
                         <a href="https://www.udesa.edu.ar/"
                             target="_blank">Universidad de San Andrés</a>.
                     </p>
                 </section>
+
             </div>
 
         </div>
