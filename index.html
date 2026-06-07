@@ -19,7 +19,7 @@
             --card-bg: #ffffff;
             --border-color: #e2e8f0;
             --header-image-url: url('https://images.unsplash.com/photo-1590113110292-9706f9d6c342?q=80&w=1600&auto=format&fit=crop'); 
-            --header-overlay: linear-gradient(135deg, rgba(34, 35, 105, 0.95) 0%, rgba(39, 77, 139, 0.9) 100%);
+            --header-overlay: linear-gradient(135deg, rgba(34, 35, 105, 0.95) 0%, rgba(42, 64, 99, 0.9) 100%);
         }
 
         * {
@@ -52,7 +52,7 @@
             margin: 0 auto;
             background: var(--card-bg);
             border-radius: 20px; 
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.02), 0 10px 10px -5px rgba(0, 0, 0, 0.01);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.02), 0 10px 10px -5px rgba(27, 22, 70, 0.01);
             overflow: hidden;
             animation: fadeInSlideUp 0.8s ease-out; 
         }
@@ -117,6 +117,7 @@
         }
 
         .header-text a:hover {
+            color: #ffffff; 
             border-bottom: 1px solid #5eead4;
         }
 
@@ -214,12 +215,12 @@
         }
         
         .item-list li a {
-            color: var(--text-color);
+            color: var(--secondary-color); /* Cambiado al color turquesa unificado */
             font-weight: 500;
         }
         
         .item-list li a:hover {
-            color: var(--secondary-color);
+            color: var(--primary-color);
         }
 
         .venue {
